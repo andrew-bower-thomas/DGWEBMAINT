@@ -1,0 +1,257 @@
+@font-face {
+	font-family: DINProBlack;
+	src: url("./fonts/DINPro-Black tr.woff");
+}
+
+@font-face {
+	font-family: DINProBold;
+	src: url("./fonts/DINPro-Bold tr.woff");
+}
+
+@font-face {
+	font-family: DINProLight;
+	src: url("./fonts/DINPro-Light tr.woff");
+}
+
+@font-face {
+	font-family: DINProMedium;
+	src: url("./fonts/DINPro-Medium tr.woff");
+}
+
+html, body, .container {
+	height: 100%;
+	margin: 0;
+}
+
+html {
+	font-size: 14px;
+}
+
+@media (min-width: 768px) {
+	html {
+		font-size: 16px;
+	}
+}
+
+body {
+	font-family: DINProMedium;
+	font-variant-ligatures: no-common-ligatures;
+	color: black;
+	background-color: gray;
+}
+
+.background-image {
+	position: fixed;
+	margin: 0;
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+	z-index: 0;
+	color: transparent;
+	list-style: none;
+}
+
+.background-image li span {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	color: transparent;
+	background-size: cover;
+	background-position: 50% 50%;
+	opacity: 0;
+	z-index: 0;
+	-webkit-animation: imageAnimation 30s linear infinite 0s;
+	-moz-animation: imageAnimation 30s linear infinite 0s;
+	-o-animation: imageAnimation 30s linear infinite 0s;
+	-ms-animation: imageAnimation 30s linear infinite 0s;
+	animation: imageAnimation 30s linear infinite 0s;
+}
+
+@-webkit-keyframes imageAnimation {
+	0% {
+		opacity: 0;
+	}
+
+	6% {
+		opacity: 1;
+	}
+
+	34% {
+		opacity: 1
+	}
+
+	40% {
+		opacity: 0
+	}
+
+	100% {
+		opacity: 0
+	}
+}
+
+@-moz-keyframes imageAnimation {
+	0% {
+		opacity: 0;
+	}
+
+	6% {
+		opacity: 1;
+	}
+
+	34% {
+		opacity: 1
+	}
+
+	40% {
+		opacity: 0
+	}
+
+	100% {
+		opacity: 0
+	}
+}
+
+@-o-keyframes imageAnimation {
+	0% {
+		opacity: 0;
+	}
+
+	6% {
+		opacity: 1;
+	}
+
+	34% {
+		opacity: 1
+	}
+
+	40% {
+		opacity: 0
+	}
+
+	100% {
+		opacity: 0
+	}
+}
+
+@-ms-keyframes imageAnimation {
+	0% {
+		opacity: 0;
+	}
+
+	6% {
+		opacity: 1;
+	}
+
+	34% {
+		opacity: 1
+	}
+
+	40% {
+		opacity: 0
+	}
+
+	100% {
+		opacity: 0
+	}
+}
+
+@keyframes imageAnimation {
+	0% {
+		opacity: 0;
+	}
+
+	6% {
+		opacity: 1;
+	}
+
+	34% {
+		opacity: 1
+	}
+
+	40% {
+		opacity: 0
+	}
+
+	100% {
+		opacity: 0
+	}
+}
+
+#background-image-1 {
+	background-image: url("../images/florian-wehde-V4cHacmEnW8-unsplash.jpg");
+	-webkit-animation-delay: 0s;
+	-moz-animation-delay: 0s;
+	-o-animation-delay: 0s;
+	-ms-animation-delay: 0s;
+	animation-delay: 0s;
+}
+
+#background-image-2 {
+	background-image: url("../images/aditya-vyas-7ygsBEajOG0-unsplash.jpg");
+	-webkit-animation-delay: 10s;
+	-moz-animation-delay: 10s;
+	-o-animation-delay: 10s;
+	-ms-animation-delay: 10s;
+	animation-delay: 10s;
+}
+
+#background-image-3 {
+	background-image: url("../images/colton-duke-UExx0KnnkjY-unsplash.jpg");
+	-webkit-animation-delay: 20s;
+	-moz-animation-delay: 20s;
+	-o-animation-delay: 20s;
+	-ms-animation-delay: 20s;
+	animation-delay: 20s;
+}
+
+.container {
+	position: relative;
+}
+
+.flex-wrapper {
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.no-flex {
+	flex-shrink: 0;
+}
+
+.flex {
+	flex-grow: 1;
+}
+
+#home {
+	position: absolute;
+	text-align: center;
+	width: 100%;
+	top: 35%;
+	left: 50%;
+	transform: translate(-50%, -35%);
+	background-color: rgba(255,255,255,0.5);
+	font-family: DINProBold;
+	font-size: 1.5em;
+}
+
+#logo-home {
+	width: 90%;
+	max-width: 350px;
+}
+
+#slogan-home {
+	margin-top: 0;
+}
+
+#footer {
+	background-color: rgba(255,255,255,0.9);
+	position: relative;
+}
+
+.footer-content {
+	text-align: center;
+	font-size: 0.8em;
+}
